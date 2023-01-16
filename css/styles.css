@@ -82,6 +82,8 @@ img {
 
 header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .container.header {
@@ -139,9 +141,20 @@ header {
 }
 
 .hero-section {
-  background-color: var(--dark-bcg);
+  height: 600px;
+
   padding-top: 192px;
   padding-bottom: 192px;
+
+  background-color: var(--dark-bcg);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 
   text-align: center;
 }
@@ -160,6 +173,19 @@ header {
   margin-bottom: 48px;
 }
 
+.thumb {
+  background-color: var(--cloud);
+  width: 264px;
+  height: 112px;
+  padding: 24px 100px;
+  margin-bottom: 8px;
+}
+
+.icon {
+  width: 64px;
+  height: 64px;
+}
+
 .features {
   padding: 120px 0;
 }
@@ -174,11 +200,11 @@ header {
 }
 
 .feature-title {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
 
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .feature-descr {
@@ -233,6 +259,31 @@ header {
   column-gap: 24px;
 }
 
+.socials {
+  display: flex;
+  margin-top: 8px;
+  gap: 24px;
+}
+
+.social-button {
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: #404bbf;
+}
+
+.social-icon {
+  height: 100%;
+  width: 100%;
+  padding: 12px;
+}
+
 .name {
   font-weight: 700;
   font-size: 20px;
@@ -247,14 +298,90 @@ header {
   margin-top: 8px;
 }
 
+.customers {
+  padding: 130px 156px 120px;
+}
+
+.customer {
+  fill: #8e8f99;
+  width: 100%;
+  height: 100%;
+  padding: 16px 32px;
+}
+
+.customer:hover,
+.customer:focus {
+  fill: #404bbf;
+}
+
+.customer-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 168px;
+  height: 88px;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.customer-button:hover,
+.customer-button:focus {
+  border: 1px solid #404bbf;
+}
+
+.customer-list {
+  justify-content: center;
+  display: flex;
+  gap: 24px;
+}
+
+.footer-wrap {
+  display: flex;
+  align-items: center;
+  gap: 120px;
+}
+
+.social-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.footer-socials {
+  display: flex;
+  margin-top: 16px;
+  gap: 16px;
+}
+
+.footer-social-button {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.footer-social-button:hover,
+.footer-social-button:focus {
+  background-color: #31d0aa;
+}
+
+.footer-social-icon {
+  fill: var(--cloud);
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+}
+
 .footer {
   background-color: var(--dark-bcg);
-  color: rgba(255, 255, 255, 0.6);
+  color: #ffffff;
   padding: 100px 0px;
 }
 
 .footer-desc {
-  color: var(--cloud);
+  color: #e7e9fc;
 
   font-size: 16px;
   line-height: 1.5;
@@ -282,6 +409,10 @@ header {
   border-radius: 4px;
 }
 
+.btn.hero:hover {
+  background-color: #404bbf;
+}
+
 .btn.btn-filter {
   color: var(--accent-color);
   background-color: var(--btn-primary-color);
@@ -294,6 +425,14 @@ header {
   width: fit-content;
   height: 38px;
   padding: 6px 22px;
+}
+
+.btn-filter:hover,
+.btn-filter:focus {
+  background-color: var(--accent-color);
+  color: var(--btn-primary-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .ghost-title {
@@ -348,8 +487,13 @@ header {
 
 .work {
   background-color: var(--white);
-
   flex-basis: calc((100% - 48px) / 3);
+}
+
+.work:hover {
+  cursor: pointer;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .work:nth-child(3n) {
@@ -374,7 +518,6 @@ header {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.2;
-
 }
 .work-type {
   color: var(--secondary-text-color);
