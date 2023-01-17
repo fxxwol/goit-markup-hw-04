@@ -59,11 +59,11 @@ img {
   font-family: "Raleway", sans-serif;
   letter-spacing: 0.03em;
   font-weight: 800;
-  font-size: 26px;
-  line-height: 1.2;
+  font-size: 18px;
+  line-height: 1.33;
   text-decoration: none;
-
-  margin-right: 77px;
+  text-transform: uppercase;
+  margin-right: 76px;
 }
 
 .logo.light {
@@ -112,7 +112,7 @@ header {
 
 .contact {
   color: var(--secondary-text-color);
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   text-decoration: none;
@@ -162,7 +162,7 @@ header {
 .hero-title {
   color: var(--white);
 
-  font-weight: 500;
+  font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
@@ -302,6 +302,11 @@ header {
   padding: 130px 156px 120px;
 }
 
+.icon-container {
+  width: 168px;
+  height: 88px;
+}
+
 .customer {
   fill: #8e8f99;
   width: 100%;
@@ -394,7 +399,7 @@ header {
 /* portfolio */
 
 .btn.hero {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.04em;
@@ -421,6 +426,7 @@ header {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+  border: 1px solid #e7e9fc;
 
   width: fit-content;
   height: 38px;
@@ -433,6 +439,7 @@ header {
   color: var(--btn-primary-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+    border: 1px solid var(--accent-color);
 }
 
 .ghost-title {
@@ -515,7 +522,7 @@ header {
 }
 
 .work-title {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
 }
