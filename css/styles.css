@@ -259,6 +259,12 @@ header {
   column-gap: 24px;
 }
 
+.icon-link{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
 .socials {
   display: flex;
   margin-top: 8px;
@@ -303,7 +309,7 @@ header {
 }
 
 .customer-list-item {
-  width: calc((100%-120px) / 6);
+  flex-basis: calc((100%-120px) / 6);
   height: 88px;
   fill: #8e8f99;
 }
@@ -340,7 +346,7 @@ header {
 
 .footer-wrap {
   display: flex;
-  align-items: center;
+  align-items:flex-start;
   gap: 120px;
 }
 
@@ -426,7 +432,7 @@ header {
   border: 1px solid #e7e9fc;
 
   width: fit-content;
-  height: 38px;
+  height: 48px;
   padding: 6px 22px;
 }
 
