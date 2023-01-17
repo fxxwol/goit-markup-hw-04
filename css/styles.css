@@ -142,6 +142,7 @@ header {
 
 .hero-section {
   height: 600px;
+  min-width: 1440px;
 
   padding-top: 192px;
   padding-bottom: 192px;
@@ -229,6 +230,7 @@ header {
 .workers {
   background-color: var(--cloud);
   padding: 120px 0;
+  min-width: 1440px;
 }
 
 .list.activity-list {
@@ -246,7 +248,7 @@ header {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
 
-  flex-basis: calc((100%-72px) / 4);
+  flex-basis: calc((100% - 72px) / 4);
   text-align: center;
 }
 
@@ -259,7 +261,7 @@ header {
   column-gap: 24px;
 }
 
-.icon-link{
+.icon-link {
   width: 100%;
   height: 100%;
   display: block;
@@ -309,7 +311,7 @@ header {
 }
 
 .customer-list-item {
-  flex-basis: calc((100%-120px) / 6);
+  flex-basis: calc((100% - 120px) / 6);
   height: 88px;
   fill: #8e8f99;
 }
@@ -325,13 +327,13 @@ header {
   cursor: pointer;
 }
 
-.customer-icon{
+.customer-icon {
   fill: #8e8f99;
   width: 104px;
   height: 56px;
 }
 
-.customer-btn:is(:hover, :focus){
+.customer-btn:is(:hover, :focus) {
   border-color: #404bbf;
 }
 
@@ -346,7 +348,7 @@ header {
 
 .footer-wrap {
   display: flex;
-  align-items:flex-start;
+  align-items: flex-start;
   gap: 120px;
 }
 
@@ -385,6 +387,7 @@ header {
 .footer {
   background-color: var(--dark-bcg);
   color: #ffffff;
+  min-width: 1440px;
   padding: 100px 0px;
 }
 
