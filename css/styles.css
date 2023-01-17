@@ -142,17 +142,18 @@ header {
 
 .hero-section {
   height: 600px;
-  min-width: 1440px;
+  max-width: 1440px;
 
   padding-top: 192px;
   padding-bottom: 192px;
-
-  background-color: var(--dark-bcg);
+margin: 0 auto;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/people-office.jpg);
+
+  background-color: var(--dark-bcg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
