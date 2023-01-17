@@ -98,8 +98,8 @@ header {
   text-decoration: none;
 
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .navs.list :not(:last-child) {
@@ -116,8 +116,8 @@ header {
   font-size: 16px;
   line-height: 1.5;
   text-decoration: none;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .contacts.list {
